@@ -9,7 +9,7 @@ defmodule GettingStartedWithEcto.Application do
     # List all child processes to be supervised
     children = [
       # Starts a worker by calling: GettingStartedWithEcto.Worker.start_link(arg)
-      # {GettingStartedWithEcto.Worker, arg},
+      GettingStartedWithEcto.Repo
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

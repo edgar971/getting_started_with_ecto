@@ -2,6 +2,11 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
+config :getting_started_with_ecto, GettingStartedWithEcto.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  database: "getting_started_with_ecto_repo",
+  hostname: "localhost"
+
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
 # file won't be loaded nor affect the parent project. For this reason,
@@ -28,3 +33,5 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
+
+config :getting_started_with_ecto, ecto_repos: [GettingStartedWithEcto.Repo]
