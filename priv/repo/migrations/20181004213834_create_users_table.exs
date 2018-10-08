@@ -3,7 +3,7 @@ defmodule GettingStartedWithEcto.Repo.Migrations.CreateUsersTable do
 
   def change do
     create table(:users) do
-      add(:name, :string)
+      add(:name, :string, size: 100)
 
       timestamps()
     end
