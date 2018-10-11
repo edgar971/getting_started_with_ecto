@@ -1,4 +1,6 @@
 defmodule GettingStartedWithEctoTest do
+  use GettingStartedWithEcto.DataCase
+  
   use ExUnit.Case
   doctest GettingStartedWithEcto
 
