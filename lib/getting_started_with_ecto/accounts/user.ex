@@ -6,7 +6,7 @@ defmodule GettingStartedWithEcto.Accounts.User do
   schema "users" do
     field(:name, :string)
     field(:age, :integer)
-    has_one(:credential, Credential)
+    has_one(:credentials, Credential)
 
     timestamps()
   end

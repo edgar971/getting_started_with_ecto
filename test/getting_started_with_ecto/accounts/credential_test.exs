@@ -3,7 +3,6 @@ defmodule GettingStartedWithEcto.Accounts.CredentialTest do
   use ExUnit.Case
 
   alias GettingStartedWithEcto.Accounts.Credential
-  alias GettingStartedWithEcto.Repo
 
   describe "credentials changeset" do
     @valid_attrs %{

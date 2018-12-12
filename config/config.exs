@@ -3,7 +3,6 @@
 use Mix.Config
 
 config :getting_started_with_ecto, GettingStartedWithEcto.Repo,
-  adapter: Ecto.Adapters.Postgres,
   database: "getting_started_with_ecto_repo",
   hostname: "localhost"
 

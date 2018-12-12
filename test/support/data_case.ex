@@ -13,11 +13,11 @@ defmodule GettingStartedWithEcto.DataCase do
 
   setup tags do
     :ok = Ecto.Adapters.SQL.Sandbox.checkout(GettingStartedWithEcto.Repo)
-    
+
     unless tags[:async] do
       Ecto.Adapters.SQL.Sandbox.mode(GettingStartedWithEcto.Repo, {:shared, self()})
     end
-    
+
     :ok
   end
 end
